@@ -7,7 +7,15 @@
  *
  **/
 
-
+function justOneString(p1, p2) {
+	if (typeof p1 === "string" && typeof p2 !== "string") {
+		return true;
+	} else if (typeof p2 === "string" && typeof p1 !== "string") {
+		return true;
+    } else {
+    	return false;
+    }
+}
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 console.assert(justOneString('a', 5) === true)

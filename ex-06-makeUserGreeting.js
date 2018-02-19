@@ -19,6 +19,13 @@
  **/
 
 
+function makeUserGreeting(name, arg) {
+	if (arg === true) {
+		return "Good to see you again, " + name + ".";
+	} else {
+		return "Welcome, " + name + "!";
+	}
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
@@ -30,4 +37,4 @@ var funcOutput2 = makeUserGreeting("Mira", false)
 console.assert( funcOutput2 === "Welcome, Mira!");
 
 var funcOutput3 = makeUserGreeting("Nico", false)
-console.assert(funcOutput3 !== "Good to see you again, Nico.");
+console.assert( funcOutput3 !== "Good to see you again, Nico.");

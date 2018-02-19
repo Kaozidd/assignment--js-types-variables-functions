@@ -6,10 +6,9 @@
  *
  **/
 
-function simpleSum(){
-	//YOUR CODE HERE
-   //  -- NOTE you will need to write the functions for
-   //     remaining problems in the problem set
+function simpleSum(n1, n2){
+	let sum = n1 + n2;
+	return sum;
 }
 
 

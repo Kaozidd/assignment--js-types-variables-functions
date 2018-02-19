@@ -7,7 +7,9 @@
  *
  **/
 
-
+function makeGreeting(name) {
+	return "Hello " + name;
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

@@ -9,6 +9,10 @@
  **/
 
 
+function getAverage(nm1, nm2) {
+	let avr = (nm1 + nm2) / 2
+	return avr;
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

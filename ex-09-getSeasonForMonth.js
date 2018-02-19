@@ -15,6 +15,22 @@
  **/
 
 
+function getSeasonForMonth(int) {
+	if (int > 0 && int < 13) {
+		if (int == 12 || int == 1 || int == 2) {
+			return "winter";
+		} else if (int == 3 || int == 4 || int == 5) {
+			return "spring"
+		} else if (int == 6 || int == 7 || int == 8) {
+			return "summer";
+		} else {
+			return "fall";
+		}
+	} else {
+		return false;
+	}
+}
+
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

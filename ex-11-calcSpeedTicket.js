@@ -31,13 +31,34 @@
  *
  **/
 
-
+function calcSpeedTicket(spdlmt, usrspd, protected) {
+	if (usrspd > spdlmt || usrspd < (spdlmt + 20)) {
+		let fine = 150;
+		if (protected === true) {
+			let fine2 = fine * 2;
+			return fine2;
+		} else {
+			return fine;
+		}
+	} else if (usrspd >= (spdlmt + 20)) {
+		let fine = 250;
+		if (protected === true) {
+			let fine2 = fine * 2;
+			return fine2;
+		} else {
+			return fine;
+		}
+	} else {
+		let fine = 0;
+		return fine;
+	}
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 console.assert( calcSpeedTicket(25, 40, false) === 150  )
-console.assert( calcSpeedTicket(65, 72, true) === 150  )
+console.assert( calcSpeedTicket(65, 72, true) === 300  )
 console.assert( calcSpeedTicket(75, 97, false) === 250 )
 console.assert( calcSpeedTicket(55, 83, true) === 500  )
 

@@ -7,6 +7,18 @@
  **/
 
 
+function getMinimum(m1, m2, m3, m4) {
+	if (m1 < m2 && m1 < m3 && m1 < m4) {
+		return m1;
+	} else if (m2 < m3 && m2 < m4) {
+		return m2;
+	} else if (m3 < m4) {
+		return m3;
+	} else {
+		return m4;
+	}
+}
+
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 
